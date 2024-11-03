@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Bella Itália</title>
+    <link rel="icon" type="image/png" href="imagens/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <!-- Script de configuração EmailJS -->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init({
+                publicKey: "txmg7iIGdDbiBcIut",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Pizzaria Be<font color="green">l</font><font color="red">l</font>a Itália</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="produtos.html">Produtos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin.html">Área Administrativa</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Formulário de contato -->
+    <div class="container">
+        <h1>Entre em Contato</h1>
+        <form id="formulario-contato">
+            <input type="text" id="nome" name="nome" placeholder="Nome" required><br>
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required><br>
+            <input type="email" id="email" name="email" placeholder="E-mail" required><br>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Mensagem" required></textarea><br>
+            <center><button type="submit">Enviar</button></center>
+        </form>
+        <p id="mensagem-sucesso" style="display:none; color:green;">Mensagem enviada com sucesso!</p>
+        <p id="mensagem-erro" style="display:none; color:red;">Ocorreu um erro. Por favor, tente novamente.</p>
+    </div>
+    
+    <!-- Script para envio do e-mail -->
+    <script src="email.js"></script>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Pizzaria Bella Itália. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

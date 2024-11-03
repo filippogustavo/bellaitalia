@@ -1,0 +1,264 @@
+.banner {
+    background-image: url(imagens/banner.png);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.secao-sobre {
+    margin: 50px 0 10px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.secao-sobre h2 {
+    font-size: 2.5rem;
+}
+
+.secao-produtos {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.secao-produtos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.secao-produtos .product-card{
+    border: none;
+}
+
+.secao-produtos .product-card img {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+form {
+    max-width: 800px;
+    margin: 50px auto 50px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 24px;
+    width: 20%;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+#mensagem-sucesso,
+#mensagem-erro {
+    text-align: center;
+}
+
+#lista-produtos {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.produto {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.produto img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.produto h2 {
+    color: #333;
+}
+
+.produto p {
+    color: #666;
+}
+
+#login-form {
+    max-width: 300px;
+    margin: 50px auto 200px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#login-form input[type="email"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#login-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#login-form button:hover {
+    background-color: darkgreen;
+}
+
+#login-error {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.produto-item {
+    display: flex;
+    align-items: flex-start;
+    margin: 10px 0 50px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.produto-detalhes {
+    flex: 1;
+}
+
+.produto-imagem {
+    margin-left: 20px;
+}
+
+.produto-imagem img {
+    width: 100px;
+    height: auto;
+}
+
+.produto-botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+.produto-botoes button {
+    margin-bottom: 5px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 80px;
+    color: white;
+}
+
+.btnExcluir {
+    background-color: red;
+}
+
+.btnExcluir:hover {
+    background-color: darkred;
+}
+
+.btnEditar {
+    background-color: #4CAF50;
+}
+
+.btnEditar:hover {
+    background-color: darkgreen;
+}
+
+#produto-form {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#produto-form input[type="text"],
+#produto-form textarea,
+#produto-form input[type="number"], 
+#produto-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#produto-form button {
+    width: 25%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#produto-form button:hover {
+    background-color: darkgreen;
+}
