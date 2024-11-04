@@ -122,8 +122,13 @@ function editarProduto(id, nome, descricao, preco, imagem) {
     document.getElementById('descricao').value = descricao;
     document.getElementById('preco').value = preco;
 
-    // Atualizar o produto após edição
+    // Atualizar o texto do botão para "Salvar Alterações"
     document.getElementById('adicionar-button').textContent = 'Salvar Alterações';
+
+    // Scroll até o formulário
+    document.getElementById('produto-form').scrollIntoView({ behavior: 'smooth' });
+
+    // Define a função para salvar as alterações
     document.getElementById('adicionar-button').onclick = function () {
         var novoNome = document.getElementById('nome').value;
         var novaDescricao = document.getElementById('descricao').value;
